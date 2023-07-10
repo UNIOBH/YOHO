@@ -1,0 +1,10 @@
+// 添加$line行省略号
+@mixin ellipsis($line) {
+  text-overflow: ellipsis;
+  -webkit-line-clamp: $line;
+  word-break: break-all;
+  height: auto;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}

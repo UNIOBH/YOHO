@@ -1,0 +1,50 @@
+@font-face {
+  font-family: "HappyZcool";
+  src: url("~assets/font/HappyZcool-2016.ttf");
+}
+
+@font-face {
+  font-family: "ZhanKu";
+  src: url("~assets/font/ZhanKuKuaiLeTi2016XiuDingBan-1.ttf");
+}
+
+* {
+  font-family: "HappyZcool", "ZhanKu";
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+  list-style: none;
+  box-sizing: border-box;
+}
+
+input {
+  outline: none;
+}
+
+select {
+  outline: none;
+}
+
+a {
+  color: black;
+  text-decoration: none;
+}
+
+@media only screen and (max-width: 1600px) and (min-width: 1280px) {
+  html {
+    font-size: 18px;
+  }
+}
+
+@media only screen and (max-width: 1280px) and (min-width: 960px) {
+  html {
+    font-size: 16px;
+  }
+}
+
+@media only screen and (max-width: 960px) {
+  html {
+    font-size: 12px;
+  }
+}

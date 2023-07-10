@@ -1,0 +1,129 @@
+@mixin underline-affter {
+  content: "";
+  height: 2px;
+  background: #000;
+  display: block;
+  position: absolute;
+  left: 0;
+  bottom: -4px;
+}
+
+header {
+  .header-logo {
+    flex-grow: 1;
+
+    img {
+      width: 60%;
+      height: 80%;
+    }
+  }
+
+  .header-right-pc {
+    display: flex;
+    flex-grow: 3;
+
+    ul.header-nav {
+      text-align: center;
+      width: auto;
+      display: flex;
+      align-items: center;
+      flex-grow: 11;
+
+      li {
+        height: auto;
+
+        a {
+          width: auto;
+          position: relative;
+
+          &.underline::after {
+            @include underline-affter;
+            width: 100%;
+          }
+
+          &.no-underline::after {
+            @include underline-affter;
+            width: 0;
+            transition: all 0.3s;
+          }
+
+          &.no-underline:hover::after {
+            width: 100%;
+          }
+        }
+      }
+    }
+
+    .header-user {
+      width: auto;
+      flex-grow: 1;
+      position: relative;
+
+      .header-user-show {
+        display: flex;
+        align-items: center;
+
+        .header-user-avatar {
+          position: relative;
+          img {
+            width: 2.5rem;
+            height: 2.5rem;
+            border-radius: 50%;
+            position: absolute;
+            left: 50%;
+            top: 50%;
+            transform: translate(-50%, -50%);
+          }
+        }
+
+        span {
+          font-size: 0.875rem;
+          height: auto;
+        }
+      }
+
+      .header-user-no {
+        display: flex;
+        align-items: center;
+
+        a {
+          margin: 0 0 0 .625rem;
+          width: auto;
+          height: auto;
+        }
+      }
+
+      &:hover ul.header-user-hide {
+        display: block;
+      }
+
+      ul.header-user-hide {
+        text-align: center;
+        width: 100%;
+        height: auto;
+        background: #fff;
+        border: 3px solid #000;
+        border-radius: 10px;
+        position: absolute;
+        left: 0;
+        right: 0;
+        display: none;
+        transition: height 0.5s;
+        overflow: hidden;
+
+        li {
+          line-height: 28px;
+          cursor: default;
+
+          &:hover {
+            background: rgb(234, 234, 234);
+          }
+        }
+      }
+    }
+  }
+
+  .header-right-mobile {
+    display: none;
+  }
+}

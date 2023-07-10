@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.uniobh.yoho.mapper.FriendMapper">
+
+    <resultMap id="BaseResultMap" type="com.uniobh.yoho.pojo.Friend">
+            <id property="fId" column="f_Id" jdbcType="INTEGER"/>
+            <result property="uId" column="u_id" jdbcType="INTEGER"/>
+            <result property="fUId" column="f_u_id" jdbcType="INTEGER"/>
+            <result property="fRemark" column="f_remark" jdbcType="VARCHAR"/>
+    </resultMap>
+
+    <sql id="Base_Column_List">
+        f_Id,u_id,f_u_id,
+        f_remark,f_state
+    </sql>
+</mapper>

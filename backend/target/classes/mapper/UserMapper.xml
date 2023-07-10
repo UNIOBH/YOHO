@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.uniobh.yoho.mapper.UserMapper">
+
+    <resultMap id="BaseResultMap" type="com.uniobh.yoho.pojo.User">
+            <id property="uId" column="u_id" jdbcType="INTEGER"/>
+            <result property="uName" column="u_name" jdbcType="VARCHAR"/>
+            <result property="uPassword" column="u_password" jdbcType="VARCHAR"/>
+            <result property="uNickname" column="u_nickname" jdbcType="VARCHAR"/>
+            <result property="uSex" column="u_sex" jdbcType="INTEGER"/>
+            <result property="uRegisterTime" column="u_register_time" jdbcType="TIMESTAMP"/>
+            <result property="uEmail" column="u_email" jdbcType="VARCHAR"/>
+            <result property="uAvatar" column="u_avatar" jdbcType="VARCHAR"/>
+            <result property="sId" column="s_id" jdbcType="INTEGER"/>
+            <result property="uDel" column="u_del" jdbcType="INTEGER"/>
+            <result property="uType" column="u_type" jdbcType="INTEGER"/>
+    </resultMap>
+
+    <sql id="Base_Column_List">
+        u_id,u_name,u_password,
+        u_nickname,u_sex,u_register_time,
+        u_email,u_avatar,s_id,
+        u_del,u_type
+    </sql>
+</mapper>

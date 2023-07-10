@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.uniobh.yoho.mapper.CommentMapper">
+
+    <resultMap id="BaseResultMap" type="com.uniobh.yoho.pojo.Comment">
+            <id property="mId" column="m_id" jdbcType="INTEGER"/>
+            <result property="iId" column="i_id" jdbcType="INTEGER"/>
+            <result property="mContent" column="m_content" jdbcType="VARCHAR"/>
+            <result property="mTime" column="m_time" jdbcType="TIMESTAMP"/>
+            <result property="mPId" column="m_p_id" jdbcType="INTEGER"/>
+            <result property="uId" column="u_id" jdbcType="INTEGER"/>
+            <result property="mLikeCount" column="m_like_count" jdbcType="INTEGER"/>
+            <result property="mToMId" column="m_to_m_id" jdbcType="INTEGER"/>
+    </resultMap>
+
+    <sql id="Base_Column_List">
+        m_id,i_id,m_content,
+        m_time,m_p_id,u_id,
+        m_like_count,m_to_m_id
+    </sql>
+</mapper>

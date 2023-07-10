@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.uniobh.yoho.mapper.CityMapper">
+
+    <resultMap id="BaseResultMap" type="com.uniobh.yoho.pojo.City">
+            <id property="cId" column="c_id" jdbcType="INTEGER"/>
+            <result property="pId" column="p_id" jdbcType="INTEGER"/>
+            <result property="cName" column="c_name" jdbcType="VARCHAR"/>
+    </resultMap>
+
+    <sql id="Base_Column_List">
+        c_id,p_id,c_name
+    </sql>
+</mapper>

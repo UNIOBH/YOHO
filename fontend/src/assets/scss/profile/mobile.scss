@@ -1,0 +1,12 @@
+.profile {
+  main {
+    flex-direction: column;
+    ul.profile-nav {
+      display: flex;
+      flex: auto;
+      li:nth-last-child(n + 2) {
+        border-right: 0.3125rem solid #000;
+      }
+    }
+  }
+}

@@ -1,0 +1,46 @@
+.login {
+  .login-header {
+    display: flex;
+    align-items: center;
+
+    img {
+      width: 12.5rem;
+    }
+
+    h1 {
+      margin-left: 0.625rem;
+    }
+  }
+
+  .login-main {
+    display: flex;
+
+    .login-main-left {
+      width: 25rem;
+      height: 20rem;
+    }
+
+    .login-main-right {
+      .login-code {
+        display: flex;
+        align-items: center;
+        position: relative;
+
+        #login-code-input {
+        }
+
+        .login-code-right {
+          
+          .login-code-img {
+            margin: 0 0.625rem;
+          }
+        }
+      }
+
+      .login-submit {
+        display: flex;
+        align-items: center;
+      }
+    }
+  }
+}

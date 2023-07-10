@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>注册</title>
+</head>
+<body>
+    <div class="register"
+         style="margin: 0 auto;
+         width: 500px;
+         height: auto;
+         border: 5px solid black;
+         box-shadow: 5px 4px 3px rgba(0, 0, 0, .5);
+         border-radius: 10px;
+         box-sizing: border-box;">
+        <div
+             style="color: #fff;
+             text-align: center;
+             font-size: 20px;
+             font-weight: bold;
+             width: 100%;
+             height: 50px;
+             line-height: 50px;
+             background: #000;">
+            YoHo注册！！！
+        </div>
+        <main style="padding: 0 30px">
+            <h2>感谢您注册YoHo账户</h2>
+            <p style="font-style: italic; text-indent: 20px;">亲爱的用户，您好：</p>
+            <p style="text-align: center; font-style: italic;">很高兴您能注册我们的账户，您的邮箱验证码为：</p>
+            <p style="text-align: center; font-size: 30px; font-weight: bold;" th:text="${code}"></p>
+        </main>
+        <footer style="color: #8a759f;
+                       font-size: 12px;
+                       text-align: center;
+                       padding: 0 0 15px 0;">
+            如您有任何问题，可以发送至邮箱：
+            uniobh@qq .com
+        </footer>
+    </div>
+</body>
+</html>

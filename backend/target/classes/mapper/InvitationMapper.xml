@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.uniobh.yoho.mapper.InvitationMapper">
+
+    <resultMap id="BaseResultMap" type="com.uniobh.yoho.pojo.Invitation">
+            <id property="id" column="i_id" jdbcType="INTEGER"/>
+            <result property="title" column="i_title" jdbcType="VARCHAR"/>
+            <result property="details" column="i_details" jdbcType="VARCHAR"/>
+            <result property="createTime" column="i_create_time" jdbcType="TIMESTAMP"/>
+            <result property="readCount" column="i_read_count" jdbcType="INTEGER"/>
+            <result property="uId" column="u_id" jdbcType="INTEGER"/>
+            <result property="likeCount" column="i_like_count" jdbcType="INTEGER"/>
+            <result property="lastTime" column="i_last_time" jdbcType="TIMESTAMP"/>
+            <result property="del" column="i_del" jdbcType="INTEGER"/>
+            <result property="isRecommend" column="i_is_recommend" jdbcType="INTEGER"/>
+    </resultMap>
+
+    <sql id="Base_Column_List">
+        i_id,i_title,i_details,
+        i_create_time,i_read_count,u_id,
+        i_like_count,i_last_time,i_del,
+        i_is_recommend
+    </sql>
+</mapper>

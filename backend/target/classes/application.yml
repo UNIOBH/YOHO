@@ -1,0 +1,32 @@
+mybatis-plus:
+  configuration:
+    log-impl: org.apache.ibatis.logging.stdout.StdOutImpl
+spring:
+  datasource:
+    type: com.zaxxer.hikari.HikariDataSource
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    username: root
+    password: 123456
+    url: jdbc:mysql://localhost:3306/yo_ho?useSSL=true&characterEncoding=utf-8&serverTimezone=Asia/Shanghai&useUnicode=true
+  application:
+    name: YoHo
+  mail:
+    default-encoding: utf-8
+    host: smtp.qq.com
+    username: uniobh@qq.com
+    port: 587
+    # 授权码
+    password: nwotuxjqmvjddjfj
+  mvc:
+    hiddenmethod:
+      filter:
+        enabled: true # 开启restful风格支持
+  thymeleaf:
+    prefix: classpath:/templates/  # 指定模板所在的目录
+    suffix: .html # 设置模板后缀
+    encoding: UTF-8
+    servlet:
+      content-type: text/html
+    mode: HTML5
+server:
+  port: 8081

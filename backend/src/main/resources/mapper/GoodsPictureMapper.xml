@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.uniobh.yoho.mapper.GoodsPictureMapper">
+
+    <resultMap id="BaseResultMap" type="com.uniobh.yoho.pojo.GoodsPicture">
+            <id property="id" column="g_p_id" jdbcType="INTEGER"/>
+            <result property="gId" column="g_id" jdbcType="INTEGER"/>
+            <result property="img" column="g_p_img" jdbcType="VARCHAR"/>
+    </resultMap>
+
+    <sql id="Base_Column_List">
+        g_p_id,g_id,g_p_img
+    </sql>
+</mapper>

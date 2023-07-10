@@ -1,0 +1,25 @@
+.login {
+  width: 85%;
+
+  .login-header {
+    img {
+      display: none;
+    }
+  }
+
+  .login-main {
+    .login-main-left {
+      display: none;
+    }
+
+    .login-main-right {
+      .login-code {
+        .login-code-right {
+          .login-code-img {
+            margin-right: 0.625rem;
+          }
+        }
+      }
+    }
+  }
+}

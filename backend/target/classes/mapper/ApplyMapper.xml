@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.uniobh.yoho.mapper.ApplyMapper">
+
+    <resultMap id="BaseResultMap" type="com.uniobh.yoho.pojo.Apply">
+            <id property="id" column="a_id" jdbcType="INTEGER"/>
+            <result property="uId" column="a_u_id" jdbcType="INTEGER"/>
+            <result property="pId" column="a_p_id" jdbcType="INTEGER"/>
+            <result property="cId" column="a_c_id" jdbcType="INTEGER"/>
+            <result property="sName" column="a_s_name" jdbcType="VARCHAR"/>
+            <result property="state" column="a_state" jdbcType="INTEGER"/>
+    </resultMap>
+
+    <sql id="Base_Column_List">
+        a_id,a_u_id,a_p_id,
+        a_c_id,a_s_name,a_state
+    </sql>
+</mapper>

@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.uniobh.yoho.mapper.GoodsMapper">
+
+    <resultMap id="BaseResultMap" type="com.uniobh.yoho.pojo.Goods">
+            <id property="id" column="g_id" jdbcType="INTEGER"/>
+            <result property="uId" column="u_id" jdbcType="INTEGER"/>
+            <result property="price" column="g_price" jdbcType="DECIMAL"/>
+            <result property="name" column="g_name" jdbcType="VARCHAR"/>
+            <result property="describe" column="g_describe" jdbcType="VARCHAR"/>
+            <result property="cId" column="g_c_id" jdbcType="INTEGER"/>
+            <result property="state" column="g_state" jdbcType="INTEGER"/>
+            <result property="hits" column="g_hits" jdbcType="INTEGER"/>
+            <result property="releaseTime" column="g_release_time" jdbcType="TIMESTAMP"/>
+            <result property="lastTime" column="g_last_time" jdbcType="TIMESTAMP"/>
+            <result property="isRecommend" column="g_is_recommend" jdbcType="INTEGER"/>
+            <result property="finalPrice" column="g_final_price" jdbcType="DECIMAL"/>
+    </resultMap>
+
+    <sql id="Base_Column_List">
+        g_id,u_id,g_price,
+        g_name,g_describe,g_c_id,
+        g_state,g_hits,g_release_time,
+        g_last_time,g_is_recommend,g_final_price
+    </sql>
+</mapper>
